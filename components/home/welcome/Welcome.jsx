@@ -10,7 +10,7 @@ import {
 import { useRouter } from "expo-router";
 
 import styles from './welcome.style'
-import { icons, SIZES } from "../../../constants";
+import { icons, SIZES, COLORS } from "../../../constants";
 
 const jobTypes = ['Full-time', 'Part-time', 'Contractor']
 
@@ -57,7 +57,7 @@ const Welcome = () => {
             </TouchableOpacity>
           )}
           keyExtractor={item => item}
-          contentContainerStyle={{ columnGap: SIZES.small }}
+          contentContainerStyle={{ columnGap: SIZES.small} }
           horizontal
         />
       </View>
